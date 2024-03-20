@@ -1,0 +1,4 @@
+email,first_name,last_name,gender,zipcode,address,country_code,phone_code,contact_number,designation,role,locations,is_active
+nirepoc928@duiter.com,John,Doe,Male,NZ8596,Sillicon Valley,IN,+91,8784647415,Sr. Java Developer,Client Administrator,[sarthana & mota varachha],True
+lerdimefyi@gufum.com,Lerdi,Mefyi,Female,99712,919 Stimple Ct,IN,+91,7200789641,Sr. Laravel Developer,Client User,[Mota varachha],True
+fimlacekno@gufum.com,Fimla,Cekno,Male,98109,3444 Chipmunk Lane,IN,+91,8200201470,Sr. React Developer,Client Reader,[sarthana],True
