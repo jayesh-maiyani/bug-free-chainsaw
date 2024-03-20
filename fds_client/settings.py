@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^rg_oj-bnt72vz5!*h-lx6l96w#ekurxf75eodej8p&msg@75-'
+SECRET_KEY = '#####################'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -31,7 +31,7 @@ DEBUG = False
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "https://stage.portal.fusiondatasecure.com","https://stage.api.fusiondatasecure.com", "https://6940-49-43-33-131.ngrok-free.app"]
+CORS_ORIGIN_WHITELIST = [""]
 
 
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'channels',
     'django_crontab',
     'jazzmin',
+    'subscription',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +57,6 @@ INSTALLED_APPS = [
     'django_user_agents',
     'corsheaders',
     'drf_yasg',
-    'subscription',
     'captcha',
 ]
 
@@ -118,10 +118,10 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fds_device',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'NAME': '########',
+        'USER': '#######',
+        'PASSWORD': '#########',
+        'HOST': '##########',
         'PORT': 5432,
     }
 }
@@ -253,8 +253,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 
-OTP_EMAIL = "no-reply@fusiondatasecure.com"
-OTP_EMAIL_PASSWORD = "pjwrmnlfzznakebg"
+OTP_EMAIL = "#####################"
+OTP_EMAIL_PASSWORD = "#################"
 
 
 SWAGGER_SETTINGS = {
@@ -440,16 +440,16 @@ USER_AGENTS_CACHE = 'default'
 
 ALLOWED_HOSTS = ["*"]
 
-STRIPE_PUBLISHABLE_KEY = "pk_test_51Mu7KcSGKIJ871Gbx0TIlThESVwZMFG9vwRgfv2yc5cTyiazMYbs3EBOlNCYLRo7rwaSaW9JZYA3sNcGvVK5jas900t6aBWibm"
-STRIPE_SECRET_KEY = "sk_test_51Mu7KcSGKIJ871GbMpfYFlFsvyaECIE9GVNIzkxlXEXzeJc3FO4SWmGRb9NvHOGF6L9IMPJMBPPeOMzuXJwRKSr2008IXvZHqC"
-STRIPE_WEBHOOK_SECRET = "whsec_872a3ec2ce09463d4eeb3b548fc65fe1f5f476f401ae2d2bc5206ab34972a870"
-STRIPE_PRODUCT_ID = "prod_O7EZpQztrWs5vH"
-STRIPE_MONTHLY_PRICE_ID = "price_1NaYU0SGKIJ871GbV03zVQvk"
-STRIPE_YEARLY_PRICE_ID = "price_1NaYV5SGKIJ871GbueHIWra2"
+STRIPE_PUBLISHABLE_KEY = "###################################"
+STRIPE_SECRET_KEY = "#############################################"
+STRIPE_WEBHOOK_SECRET = "##########################"
+STRIPE_PRODUCT_ID = "#################"
+STRIPE_MONTHLY_PRICE_ID = "#####################"
+STRIPE_YEARLY_PRICE_ID = "#######################"
 
 
-RECAPTCHA_PUBLIC_KEY = '6LdjH-ElAAAAAIllFt_4-vqNcGKpm5ihgEbW7fL0'
-RECAPTCHA_PRIVATE_KEY = '6LdjH-ElAAAAAG5QajpqTf5RAJYrh8PGTypHUOCs'
+RECAPTCHA_PUBLIC_KEY = '#####################'
+RECAPTCHA_PRIVATE_KEY = '#############################'
 
 
 
@@ -459,14 +459,14 @@ CELERY_BROKER_URL = 'redis://localhost:8005/'
 CELERY_RESULT_BACKEND = 'redis://localhost:8005/'
 
 
-ONESIGNAL_APP_ID = 'bf02e1a1-7095-4f24-b2e5-e1a30d201025'
-ONESIGNAL_AUTH_KEY = 'YjNkNWI3NTQtYzM5MS00YTBiLTg1N2ItMzcwNjc0OGJlNWI0'
+ONESIGNAL_APP_ID = '#######################################'
+ONESIGNAL_AUTH_KEY = '#################################'
 
 
-AWS_ACCESS_KEY_ID = 'AKIAQKNETFHC7RFSFD2C'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'fds-s3'
-AWS_S3_REGION_NAME = 'us-east-1'
+AWS_ACCESS_KEY_ID = '################'
+AWS_SECRET_ACCESS_KEY = '#######################3'
+AWS_STORAGE_BUCKET_NAME = '######'
+AWS_S3_REGION_NAME = '#########'
 
 DEFAULT_FILE_STORAGE = 'accounts.models.S3Storage'
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
